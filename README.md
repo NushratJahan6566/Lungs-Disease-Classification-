@@ -2,30 +2,19 @@
 
 Lung Disease Classification is a deep learning project that classifies chest X-ray images into four categories: Normal, COVID-19, Pneumonia, and Tuberculosis. The system is designed to help healthcare professionals detect lung diseases early and accurately using advanced deep learning techniques.
 
-Features
+**Features**
 
-Multi-class classification using a multi-channel EfficientNet ensemble (EfficientNetB0, B1, B2).
+This project uses a multi-channel EfficientNet ensemble (EfficientNetB0, B1, and B2) to classify chest X-ray images into four lung disease categories. To make the model more robust and reliable, it employs advanced data augmentation, regularization techniques, early stopping, and adaptive learning rates, which help improve accuracy while preventing overfitting. The system not only demonstrates random prediction examples from the dataset but also allows users to test their own uploaded X-ray images for instant disease classification. To make the model’s decisions more transparent, LIME explanations highlight the specific regions of the X-ray that influenced each prediction. With these strategies, the model achieves 96% training accuracy and 93% validation accuracy, providing a strong and dependable tool for lung disease detection.
 
-Advanced data augmentation, regularization, early stopping, and learning rate scheduling for improved model performance.
-
-Random prediction examples from the dataset for visualization of model behavior.
-
-Uploaded image prediction: Users can provide their own X-ray images for instant disease classification.
-
-LIME explanations: Visual interpretability of predictions, showing which regions influenced the model’s decision.
-
-Achieved 96% training accuracy and 93% validation accuracy.
-
-Dataset
+**Dataset**
 
 Total Images: 7,135 chest X-ray images
 
 Classes: Normal, COVID-19, Pneumonia, Tuberculosis
 
-Source: Chest X-ray – Pneumonia, COVID-19, Tuberculosis (Tipirneni, 2022)
- [1]
+Source: https://www.kaggle.com/datasets/jtiptj/chest-xray-pneumoniacovid19tuberculosis
 
-Tech Stack
+**Tech Stack**
 
 Python with TensorFlow / Keras
 
